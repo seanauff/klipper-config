@@ -1,0 +1,5 @@
+# klipper-config
+
+This is my klipper config for a Creality Ender 3 with the stock Melzi board. I use a Raspberry Pi 4B running my [docker image](https://github.com/seanauff/OctoPrint-Klipper) with Octoprint and Klipper.
+
+I also include the firmware, but I recommend you compile your own.
