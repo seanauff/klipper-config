@@ -1,5 +1,5 @@
 # klipper-config
 
-This is my klipper config for a Creality Ender 3 with an SKR v1.3. I use a OrangePi Zero Plus running Mainsail, Moonraker, and Klipper via [KIAUH](https://github.com/th33xitus/kiauh).
+This is my klipper config for a Voron Trident with a FYSTEC Spider v2.2. I use a Raspberry Pi 4B running Moonraker and Klipper via [KIAUH](https://github.com/dw-0/kiauh).
 
-I also include the firmware, but I recommend you compile your own.
+I do not include the firmware; compile your own.
