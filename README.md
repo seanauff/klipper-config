@@ -26,6 +26,7 @@ Non chamber parts: GF-PETG
 - Nozzle brush
 - Bento filters system
 - HULA Vibration damping feet
+- Neopixel caselights
 
 # Procedures
 
