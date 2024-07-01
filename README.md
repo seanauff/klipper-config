@@ -45,7 +45,7 @@ Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashin
 
 1. Ensure printer is cooled down.
 2. Unload filament.
-3. Turn off power to printer.
+3. Turn off power via main AC inlet switch.
 4. Remove power cord and ethernet cable.
 5. Remove any loose objects from top of printer.
 6. Remove top handles (2x M3 screws, 2.5 mm hex drive each).
@@ -59,30 +59,55 @@ Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashin
 
 Also see [here](https://wiki.fysetc.com/Spider/#44-firmware-upload).
 
-1. Access the electronics enclosure, followng procedure above.
+### Traditional method (BT0 pin not accessible)
+
+1. Access the electronics enclosure, following procedure above.
 2. Ensure all power is off.
-3. Ensure 5V select jumper is in lower position.
+3. Ensure 5V select jumper is in lower position (DC5V).
 4. Place jumper on BT0 and 3.3V pins. Could also use tweezers.
-5. Apply power.
+5. Turn on power via main AC inlet switch.
 6. Verify board is in DFU mode by checking the output of `lsusb`.
 7. Upload new firmware with `dfu-util -R -a 0 -s 0x08008000:leave -D ~/klipper/out/klipper.bin`
-8. Remove BT0 jumper.
-9. Power cycle the board.
+8. Turn off power via main AC inlet switch.
+9. Remove BT0 jumper.
+10. Firmware will be ready on next boot.
+
+### Alternate method (using external DFU boot button)
+
+1. Turn off power via main AC inlet switch.
+2. Press and hold external DFU mode switch.
+3. Turn on power via main AC inlet switch.
+4. Verify board is in DFU mode by checking the output of `lsusb`.
+5. Upload new firmware with `dfu-util -R -a 0 -s 0x08008000:leave -D ~/klipper/out/klipper.bin`
+6. Turn off power via main AC inlet switch.
+7. Firmware will be ready on next boot.
 
 ## Updating Toolhead controller (FYSETC SB CAN TH) firmware
 
 Also see [here](https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload).
 
-1. Turn off power to printer.
-2. ???
+1. Turn off power via main AC inlet switch.
+2. Open printhead cover (1x M3 screw, 2 mm hex drive)
+3. Remove 2X2P input connector.
+4. Connect Micro USB cable from Pi (via external keystone USB port) to SB CAN PCB.
+5. Turn on power via main AC inlet switch.
+6. Hold reset button for 2 seconds, then release it.
+7. Verify board is in DFU mode by checking the output of `lsusb`.
+8. Upload new firmware with `dfu-util -R -a 0 -s 0x08000000:leave -D ~/klipper/out/klipper.bin`
+9. Turn off power via main AC inlet switch.
+10. Disconnect Micro USB cable.
+11. Connect 2X2P input connector.
+12. Close printhead cover.
+13. Firmware will be ready on next boot.
 
 ## Updating USB-to-CAN board (FYSETC UCAN) firmware
 
-1. Access the electronics enclosure, followng procedure above.
-2. Ensure all power is off (unplug USB cable).
+1. Access the electronics enclosure, following procedure above.
+2. Ensure all power is off.
 3. Place jumper on BOOT0 and 3V3 pins. Could also use tweezers.
-4. Apply power (plug in USB cable).
+4. Turn on power via main AC inlet switch.
 5. Verify board is in DFU mode by checking the output of `lsusb`.
 6. Upload new firmware with `dfu-util -R -a 0 -s 0x08000000:leave -D ~/klipper/out/klipper.bin`
-7. Remove BOOT0 jumper.
-8. Power cycle the board (unplug/replug USB cable).
+7. Turn off power via main AC inlet switch.
+8. Remove BOOT0 jumper.
+9. Firmware will be ready on next boot.
