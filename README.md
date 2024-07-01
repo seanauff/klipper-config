@@ -29,6 +29,18 @@ Non chamber parts: GF-PETG
 
 # Procedures
 
+## Building Firmwares
+
+Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller).
+
+1. Ensure klipper is updated to the latest version.
+2. Access the klipper directory, typically `~/klipper`
+3. `make clean`
+4. `make menuconfig`
+5. Select the options according to the microcontroller.
+6. `make`
+7. Compiled firmware is located in `out/klipper.bin`
+
 ## Accessing Electronics
 
 1. Ensure printer is cooled down.
