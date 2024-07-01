@@ -18,9 +18,9 @@ Non chamber parts: GF-PETG
 
 - [FYSETC Voron Trident Kit](https://github.com/FYSETC/FYSETC-Voron-Trident/tree/main) - [BOM v1.0](https://github.com/FYSETC/FYSETC-Voron-Trident/blob/main/BOM.md#revision-10)
 - Stealthburner toolhead
-- Raspberry Pi 4B
+- Raspberry Pi 4B 4GB
 - FYSETC Spider v2.2
-- [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/)
+- [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/) v1.3
 - [FYSETC UCAN](https://wiki.fysetc.com/UCAN/)
 - Steel backers
 - Nozzle brush
@@ -58,6 +58,8 @@ Also see [here](https://wiki.fysetc.com/Spider/#44-firmware-upload).
 9. Power cycle the board.
 
 ## Updating Toolhead controller (FYSETC SB CAN TH) firmware
+
+Also see [here](https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload).
 
 1. Turn off power to printer.
 2. ???
