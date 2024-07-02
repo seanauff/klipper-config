@@ -43,6 +43,16 @@ Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashin
 6. `make`
 7. Compiled firmware is located in `out/klipper.bin`
 
+### Make menuconfig for UCAN
+
+- Micro-controller Architechture (STMicroelectronics STM32)
+- Processor model (STM32F072)
+- Bootloader offset (No bootloader)
+- Clock Reference (8 MHz crystal)
+- Communication interface (USB to CAN bus bridge (USB on PA11/PA12))
+- CAN bus interface (CAN bus (on PB8/PB9))
+- (1000000) CAN bus speed
+
 ## Accessing Electronics
 
 1. Ensure printer is cooled down.
