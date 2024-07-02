@@ -90,17 +90,15 @@ Also see [here](https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload)
 
 1. Turn off power via main AC inlet switch.
 2. Open printhead cover (1x M3 screw, 2 mm hex drive)
-3. Remove 2X2P input connector.
-4. Connect Micro USB cable from Pi (via external keystone USB port) to SB CAN PCB.
-5. Turn on power via main AC inlet switch.
-6. Hold reset button for 2 seconds, then release it.
-7. Verify board is in DFU mode by checking the output of `lsusb`.
-8. Upload new firmware with `dfu-util -R -a 0 -s 0x08000000:leave -D ~/klipper/out/klipper.bin`
-9. Turn off power via main AC inlet switch.
-10. Disconnect Micro USB cable.
-11. Connect 2X2P input connector.
-12. Close printhead cover.
-13. Firmware will be ready on next boot.
+3. Connect Micro USB cable from Pi (via external keystone USB port) to SB CAN PCB.
+4. Turn on power via main AC inlet switch.
+5. Hold reset button for 2 seconds, then release it.
+6. Verify board is in DFU mode by checking the output of `lsusb`.
+7. Upload new firmware with `dfu-util -R -a 0 -s 0x08000000:leave -D ~/klipper/out/klipper.bin`
+8. Turn off power via main AC inlet switch.
+9. Disconnect Micro USB cable.
+10. Close printhead cover.
+11. Firmware will be ready on next boot.
 
 ## Updating USB-to-CAN board (FYSETC UCAN) firmware
 
