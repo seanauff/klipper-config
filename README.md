@@ -23,6 +23,7 @@ Non chamber parts: GF-PETG
 - FYSETC Spider v2.2 [Github](https://github.com/FYSETC/FYSETC-SPIDER). Connected via USB to RPi.
 - [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/) v1.3B [Github](https://github.com/FYSETC/FYSETC_SB_CAN_TOOLHEAD)
 - [FYSETC UCAN](https://wiki.fysetc.com/UCAN/) [Github](https://github.com/FYSETC/UCAN). Connected via USB to RPi.
+- [FYSETC Hotkey](https://www.fysetc.com/products/fysetc-hot-key-board-voron-skirt-button-pcb-voron-skirt-klipper-pre-installed-pcb-board-with-neopixel-led-for-voron-v2-4-trident-switchwire-3d-printers) [Github](https://github.com/FYSETC/Hotkey) Connected via USB to RPi.
 - Steel backers
 - Nozzle brush
 - Bento filters system
@@ -150,3 +151,7 @@ Also see [here](https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload)
 7. Turn off power via main AC inlet switch.
 8. Remove BOOT0 jumper.
 9. Firmware will be ready on next boot.
+
+## Updating Hotkey board firmware
+
+Also see [here](https://github.com/FYSETC/Hotkey?tab=readme-ov-file#klipper)
