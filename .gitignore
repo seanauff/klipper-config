@@ -1,2 +1,7 @@
 printer-*.cfg
 .moonraker.conf.bkp
+moonraker.conf.backup
+crowsnest.conf.*
+moonraker-obico-update.cfg
+moonraker-obico.cfg
+moonraker_obico_macros.cfg
