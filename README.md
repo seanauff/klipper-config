@@ -10,7 +10,7 @@ I do not include the firmware; please compile your own.
 
 All printed parts done on my old Ender 3:
 
-Primary: Priline CF-PC
+Primary: Priline CF-PC (some hotend parts started warping so I replaced them with ABS versions)
 
 Accent: PC-PETG Blend
 
