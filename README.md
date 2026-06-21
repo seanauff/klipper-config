@@ -71,7 +71,7 @@ Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashin
 
 ## Updating Main controller (FYSETC Spider v2.2) firmware
 
-Also see [here](https://wiki.fysetc.com/Spider/#44-firmware-upload).
+Also see https://wiki.fysetc.com/docs/Spider#4.2%20Klipper
 
 ### Traditional method (BT0 pin not accessible)
 
@@ -110,7 +110,8 @@ Note: Power may be left on and physical reset button used to reboot microcontrol
 
 ## Updating Toolhead controller (FYSETC SB CAN TH) firmware
 
-Also see [here](https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload).
+Also see https://wiki.fysetc.com/docs/SB-CAN-ToolHead#3.%20Firmware%20Guide
+
 *Note:* When the micro USB port is plugged in, the 5V line pulls the BOOT0 pin high.
 
 **WARNING: Never Connect or Disconnect the 2X2P power/canbus connector while power is on!**
