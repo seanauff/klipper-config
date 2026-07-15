@@ -66,7 +66,7 @@ Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashin
 7. Remove Bento filter unit.
 8. Turn entire printer upside down, with the front facing away.
 9. Remove HULA feet.
-10. Remove electronics enclosure latches (4x, M3 screws, 3.5 mm hex drive).
+10. Remove electronics enclosure latches (4x, M3 screws, 2.5 mm hex drive).
 11. Swing open cover.
 
 ## Updating Main controller (FYSETC Spider v2.2) firmware
