@@ -19,6 +19,7 @@ Non chamber parts: GF-PETG
 - [FYSETC Voron Trident Kit](https://github.com/FYSETC/FYSETC-Voron-Trident/tree/main) - [BOM v1.0](https://github.com/FYSETC/FYSETC-Voron-Trident/blob/main/BOM.md#revision-10)
 - Stealthburner toolhead
 - [Cartographer CNC Mount](https://docs.cartographer3d.com/cartographer-cnc-mount/installation)
+- Cartographer V3. Connected via CAN (UCAN)
 - Raspberry Pi 4B 4GB
 - FYSETC Spider v2.2 [Github](https://github.com/FYSETC/FYSETC-SPIDER). Connected via USB to RPi.
 - [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/) v1.3B [Github](https://github.com/FYSETC/FYSETC_SB_CAN_TOOLHEAD) Connected via CAN (UCAN) to RPi.
