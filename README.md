@@ -21,15 +21,19 @@ Non chamber parts: GF-PETG
 - [Cartographer CNC Mount](https://docs.cartographer3d.com/cartographer-cnc-mount/installation)
 - Raspberry Pi 4B 4GB
 - FYSETC Spider v2.2 [Github](https://github.com/FYSETC/FYSETC-SPIDER). Connected via USB to RPi.
-- [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/) v1.3B [Github](https://github.com/FYSETC/FYSETC_SB_CAN_TOOLHEAD)
+- [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/) v1.3B [Github](https://github.com/FYSETC/FYSETC_SB_CAN_TOOLHEAD) Connected via CAN (UCAN) to RPi.
 - [FYSETC UCAN](https://wiki.fysetc.com/UCAN/) [Github](https://github.com/FYSETC/UCAN). Connected via USB to RPi.
 - [FYSETC Hotkey](https://www.fysetc.com/products/fysetc-hot-key-board-voron-skirt-button-pcb-voron-skirt-klipper-pre-installed-pcb-board-with-neopixel-led-for-voron-v2-4-trident-switchwire-3d-printers) [Github](https://github.com/FYSETC/Hotkey) Connected via USB to RPi.
-- Steel backers
-- Nozzle brush
+- Steel extrusion backers
+- Printed top handles
+- Silicone nozzle brush
 - Bento filters system
 - HULA Vibration damping feet
 - Neopixel caselights
-- chamber thermistor
+- Chamber thermistor
+- Chamber heater (600 W 120 VAC PTC heater controlled via SSR)
+- Raspberry Pi Chamber Camera
+- Spider board and UCAN BT0 and reset pins broken out via external connector and switch box
 
 # Procedures
 
@@ -143,6 +147,8 @@ Also see https://wiki.fysetc.com/docs/SB-CAN-ToolHead#3.%20Firmware%20Guide
 
 ## Updating USB-to-CAN board (FYSETC UCAN) firmware
 
+### Traditional method (BT0 pin not accessible)
+
 1. Access the electronics enclosure, following procedure above.
 2. Ensure all power is off.
 3. Place jumper on BOOT0 and 3V3 pins. Could also use tweezers.
@@ -152,6 +158,16 @@ Also see https://wiki.fysetc.com/docs/SB-CAN-ToolHead#3.%20Firmware%20Guide
 7. Turn off power via main AC inlet switch.
 8. Remove BOOT0 jumper.
 9. Firmware will be ready on next boot.
+
+### Alternate method (using external DFU boot button and external reset button)
+
+1. Ensure power is on.
+2. Press and hold external DFU mode switch.
+3. Press reset button.
+4. Verify board is in DFU mode by checking the output of `lsusb`.
+5. Upload new firmware with `dfu-util -R -a 0 -s 0x08008000:leave -D ~/klipper/out/klipper.bin`
+6. Press reset button.
+7. Firmware will be ready on next boot.
 
 ## Updating Hotkey board firmware
 
