@@ -1,6 +1,6 @@
 # klipper-config
 
-This is my klipper config for a [Voron Trident](https://vorondesign.com/voron_trident) (300 mm) with a FYSETC Spider v2.2. I use a Raspberry Pi 4B running Moonraker and Klipper via [KIAUH](https://github.com/dw-0/kiauh).
+This is my klipper config for a [Voron Trident](https://vorondesign.com/voron_trident) (300 mm) with a FYSETC Spider v3.0. I use a Raspberry Pi 4B running Moonraker and Klipper via [KIAUH](https://github.com/dw-0/kiauh).
 
 I do not include the firmware; please compile your own.
 
@@ -21,7 +21,7 @@ Non chamber parts: GF-PETG
 - [Cartographer CNC Mount](https://docs.cartographer3d.com/cartographer-cnc-mount/installation)
 - Cartographer V3. Connected via CAN (UCAN)
 - Raspberry Pi 4B 4GB
-- FYSETC Spider v2.2 [Github](https://github.com/FYSETC/FYSETC-SPIDER). Connected via USB to RPi.
+- FYSETC Spider v3.0 [Github](https://github.com/FYSETC/FYSETC-SPIDER). Connected via USB to RPi.
 - [FYSETC SB CAN TH](https://wiki.fysetc.com/SB%20CAN%20ToolHead/) v1.3B [Github](https://github.com/FYSETC/FYSETC_SB_CAN_TOOLHEAD) Connected via CAN (UCAN) to RPi.
 - [FYSETC UCAN](https://wiki.fysetc.com/UCAN/) [Github](https://github.com/FYSETC/UCAN). Connected via USB to RPi.
 - [FYSETC Hotkey](https://www.fysetc.com/products/fysetc-hot-key-board-voron-skirt-button-pcb-voron-skirt-klipper-pre-installed-pcb-board-with-neopixel-led-for-voron-v2-4-trident-switchwire-3d-printers) [Github](https://github.com/FYSETC/Hotkey) Connected via USB to RPi.
@@ -74,7 +74,7 @@ Also see [here](https://www.klipper3d.org/Installation.html#building-and-flashin
 10. Remove electronics enclosure latches (4x, M3 screws, 2.5 mm hex drive).
 11. Swing open cover.
 
-## Updating Main controller (FYSETC Spider v2.2) firmware
+## Updating Main controller (FYSETC Spider v3.0) firmware
 
 Also see https://wiki.fysetc.com/docs/Spider#4.2%20Klipper
 
