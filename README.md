@@ -172,4 +172,27 @@ Also see https://wiki.fysetc.com/docs/SB-CAN-ToolHead#3.%20Firmware%20Guide
 
 ## Updating Hotkey board firmware
 
-Also see [here](https://github.com/FYSETC/Hotkey?tab=readme-ov-file#klipper)
+Also see [here](https://github.com/FYSETC/Hotkey?tab=readme-ov-file#klipper), but see below for corrected instructions!
+
+```bash
+cd ~/klipper
+
+# Ensure "No bootloader" is selected
+make menuconfig KCONFIG_CONFIG=config.hotkey
+
+make clean KCONFIG_CONFIG=config.hotkey
+make KCONFIG_CONFIG=config.hotkey -j4
+# Confirm you see: Creating uf2 file out/klipper.uf2
+```
+Put the board into BOOTSEL mode (hold BOOT while powering/connecting), then:
+```Bash
+lsusb | grep -i "2e8a:0003"   # should show RP2 Boot
+
+make KCONFIG_CONFIG=config.hotkey flash FLASH_DEVICE=2e8a:0003
+# Expect: Loaded UF2 image with ~147 pages
+```
+Verify:
+```Bash
+ls /dev/serial/by-id/
+```
+Restart Klipper / refresh Fluidd — version should now match the build.
